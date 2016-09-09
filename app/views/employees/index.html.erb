@@ -5,10 +5,12 @@
       <tr>
         <th ng-click="toggleOrder('first_name')">First Name</th>
         <th ng-click="toggleOrder('last_name')">Last Name</th>
+        <th ng-click="toggleOrder('birthdate')">Birthdate</th>
       </tr>
       <tr ng-repeat="employee in employees | suspicious | orderBy: orderAttribute:descending ">
         <td>{{employee.first_name}}</td>
         <td>{{employee.last_name}}</td>
+        <td>{{employee.birthdate}}</td>
       </tr>
     </table>
     
